@@ -1,0 +1,25 @@
+{
+  "name": "common-runner",
+  "version": "1.0.0",
+  "description": "A gulp task runner for most projects. Concatenates and Uglifies JS and Scss files. Handles Handlebars.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "pre-written"
+  ],
+  "author": "Brandon Marella",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-server-livereload": "^1.8.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "mkdirp": "^0.5.1"
+  }
+}
