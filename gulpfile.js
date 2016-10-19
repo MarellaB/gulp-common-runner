@@ -1,6 +1,7 @@
-/* NODE REQUIREMENTS (Written broken up simply for appearance sake)
-  npm install --save-dev gulp gulp-concat gulp-sass gulp-server-livereload mkdirp
-  npm install --save-dev gulp-server-livereload gulp-sourcemaps gulp-uglify gulp-util
+/* NODE REQUIREMENTS (Written broken up simply for appearance sake, copy all 3 lines)
+npm install --save-dev gulp gulp-concat gulp-sass gulp-server-livereload mkdirp
+npm install --save-dev gulp-server-livereload gulp-sourcemaps gulp-uglify gulp-util
+
 */
 
 // NOTE -- Run gulp with '--type production' when sending to firebase or other
@@ -76,9 +77,7 @@ gulp.task('watch', () => {
   gulp.watch('src/**/*.html', ['html']);
 });
 
-exportsgulp.task('general', ['webserver', 'watch'], () => {
-  gutil.log('', gutil.colors.cyan('Runner Began'));
-});
+exportsgulp.task('default', ['webserver', 'watch']);
 
 //Used when inializing a new workspace
 gulp.task('init', () => {
